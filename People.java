@@ -9,6 +9,7 @@ public class People{
     	return Intro;
     }
     
+    //Define people stats
     public People(String person){
 		if (person.equals("strange man")){
 		    Name = "Richard Stallman";
@@ -40,6 +41,7 @@ public class People{
 		}
     }
     
+    //Person interaction
     public void talk(String person){
 
     	//Richard Stallman convo
