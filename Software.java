@@ -1,6 +1,7 @@
 //Defines a software class to be used during combat
 public class Software{
 
+	//static String Name; //Software title
     static String[] Attacks; //attacks that the software can have
     static String[] Weak; //attacks that the software is weak to
     static String[] Strong; //attacks that the software is resilient to
@@ -17,17 +18,12 @@ public class Software{
     public static String[] getattacks(){
     	return Attacks;
     }
+    
+    //Create software based on software title
+    public Software(String nm){
+    	String Name = nm;
 
-    public Software(){
-		String[] attacks = null;
-		String[] weak = null;
-		String[] strong = null;
-	}
-
-    //Defines all available softwares
-    public void create(String software){
-
-		if (software.equals("gnu/linux")){
+		if (Name.equals("gnu/linux")){
 		    int hp = 25;
 		    HP = hp;
 		    String[] attacks = {"free software", "package manager"};
@@ -38,7 +34,7 @@ public class Software{
 		    Strong = strong;
 	
 		}
-		if (software.equals("emacs")){
+		if (Name.equals("emacs")){
 		    int hp = 20;
 		    HP = hp;
 		    String[] attacks = {"text editor", "free software"};
@@ -49,7 +45,7 @@ public class Software{
 		    Strong = strong;
 	
 		}
-		if (software.equals("gimp")){
+		if (Name.equals("gimp")){
 		    int hp = 45;
 		    HP = hp;
 		    String[] attacks = {"free software", "green pepper","crop"};
@@ -60,7 +56,7 @@ public class Software{
 		    Strong = strong;
 	
 		}
-		if (software.equals("libre office")){
+		if (Name.equals("libre office")){
 		    int hp = 60;
 		    HP = hp;
 		    String[] attacks = {"free software", "text editor",};
@@ -71,7 +67,7 @@ public class Software{
 		    Strong = strong;
 	
 		}
-		if (software.equals("windows 7")){
+		if (Name.equals("windows 7")){
 		    int hp = 22;
 		    HP = hp;
 		    String[] attacks = {"vendor lockin", "muh games", "it just werks"};
@@ -82,7 +78,7 @@ public class Software{
 		    Strong = strong;
 	
 		}
-	    if (software.equals("linux kernel")){
+	    if (Name.equals("linux kernel")){
 		    int hp = 75;
 		    HP = hp;
 		    String[] attacks = {"GPLv2", "kernel maintainers","kernel panic"};
@@ -93,7 +89,7 @@ public class Software{
 		    Strong = strong;
 	
 		}
-	    if (software.equals("firefox")){
+	    if (Name.equals("firefox")){
 		    int hp = 50;
 		    HP = hp;
 		    String[] attacks = {"free software", "cross platform"};
