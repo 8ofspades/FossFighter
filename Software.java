@@ -7,15 +7,15 @@ public class Software{
     static String[] Strong; //attacks that the software is resilient to
     static int HP; //Software hitpoints
 
-    public static int attackslength(){
+    public int attackslength(){
     	return Attacks.length;
     }
 
-    public static int gethp(){
+    public int gethp(){
     	return HP;
     }
 
-    public static String[] getattacks(){
+    public String[] getattacks(){
     	return Attacks;
     }
     
